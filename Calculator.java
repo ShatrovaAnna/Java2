@@ -29,12 +29,12 @@ public class Calculator {
         Calculator calculator = new Calculator();
         log.info("Calculator created");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        if (args.length > 0){ // Заморочка с проверкой?
+        if (args.length > 0){
             try {
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(args[0])));
-                log.info("Opened file: \"" + args[0] +"\"");
+                log.info("Opened file: " + args[0]);
             } catch (FileNotFoundException e) {
-                log.info("Error opening file: \"" + args[0] +"\". Will reading System.in");
+                log.info("Error opening file: " + args[0]);
             }
         }
         calculator.calculate(reader);

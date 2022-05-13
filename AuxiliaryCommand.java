@@ -37,10 +37,6 @@ public class AuxiliaryCommand {
         return value.get(name);
     }
 
-    public void delete(String name) {
-        value.remove(name);
-    }
-
     public List<Double> getStack(){
         return Collections.unmodifiableList(stack);
     }
