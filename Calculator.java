@@ -20,7 +20,7 @@ public class Calculator {
             FileHandler fh = new FileHandler("src/log.txt");
             SimpleFormatter formatter = new SimpleFormatter();
             fh.setFormatter(formatter);
-            log.addHandler(fh); //???
+            log.addHandler(fh); 
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -70,7 +70,7 @@ public class Calculator {
 
     private final AuxiliaryCommand auxiliary = new AuxiliaryCommand();
 
-    private void parserCommand(String line) throws IOException, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    private void parserCommand(String line) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
 
         int currentIndex = 0;
 
