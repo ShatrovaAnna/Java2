@@ -3,6 +3,8 @@ import com.company.AuxiliaryCommand;
 import com.company.exceptions.WrongArgumentsExpression;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class Load implements Command{
@@ -17,6 +19,10 @@ public class Load implements Command{
         Scanner reader = null;
         try
         {
+           /* String fileName = parameters.substring(0,currentIndex);
+            Path path = Paths.get(fileName);
+            reader = new Scanner(path);
+            reader.useDelimiter("\\s").useLocale(Locale.ENGLISH);*/
             reader = new Scanner(new File(parameters.substring(0,currentIndex))).useDelimiter("\\s").useLocale(Locale.ENGLISH);
             while (reader.hasNext()) {
                 if (reader.hasNextDouble())
