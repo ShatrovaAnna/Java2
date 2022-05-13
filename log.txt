@@ -1,0 +1,2 @@
+мая 13, 2022 3:21:43 AM com.company.Calculator run
+INFO: Calculator created
